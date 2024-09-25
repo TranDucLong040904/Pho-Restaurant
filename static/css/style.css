@@ -1,0 +1,347 @@
+body
+{
+    margin: 0 auto; /* chỉnh lề giao diện tự động */
+}
+header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+header ul li:after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+header ul li:hover::after {
+    width: 100%;
+}
+
+#section1 {
+    height: 700px;
+    width: 100%;
+    display: inline-block;
+    max-width: 100%;
+}
+
+#section2 {
+    height: 700px;
+    max-height: 100%;
+    background-color: #41464b;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    max-width: 100%
+}
+
+#section3 {
+    height: 700px;
+    width: 100%;
+    display: inline-block;
+    max-width: 100%
+}
+
+#section4 {
+    height: 700px;
+    /*background:white;*/
+    background-color: #41464b;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+
+}
+
+#section5 {
+    height: 700px;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+}
+
+#section6 {
+    height: 700px;
+    width: 100%;
+    display: inline-block;
+    max-width: 100%;
+}
+
+h1 {
+    margin: 100px;
+    text-align: center;
+    padding: 0;
+}
+
+.c {
+    border-radius: 50%;
+    background-color: white;
+    animation-name: spin;
+    width: 90%;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+div p {
+    text-indent: 1em;
+}
+
+div b {
+    text-indent: 1em;
+}
+
+.img1 {
+    width: 46%;
+
+    border-radius: 5%;
+}
+
+
+
+.img2 {
+    width: 46%;
+    border-radius: 5%;
+}
+
+
+
+.img3 {
+    border-radius: 4%;
+    margin-top: 4px;
+    width: 92%;
+}
+
+
+
+
+#section6 html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#section6 .column {
+    float: left;
+    width: 30%;
+    margin-left: 29px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 70%;
+        display: block;
+    }
+}
+
+#section6 .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#section6 .container {
+    padding: 0 16px;
+}
+
+#section6 .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#section6 .title {
+    color: grey;
+}
+
+#section6 .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+#section5 body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full-width input fields */
+
+
+/* Set a style for all buttons */
+#section5 button {
+    border-radius: 1px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#section5 button:hover {
+    opacity: 0.8;
+    
+}
+
+#section5 button b:hover {
+    color: black;
+}
+
+#section5 .bg-dark:hover {
+    background-color: red;
+}
+
+
+
+/* Center the image and position the close button */
+#section5 .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+#section5 img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+#section5 .container {
+    padding: 16px;
+}
+
+#section5 span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+#section5 .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+#section5 .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The agree button */
+#section5 .agreeBtn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#section5 .agreeBtn:hover {
+    background-color: #208020;
+}
+
+#section5 .agreeBtn:hover a {
+    color: #fff;
+}
+
+
+
+/* The Close Button (cancel) */
+
+    /* Extra styles for the cancel button */
+#section5 .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    border: solid 2px;
+    border-radius: 5%;
+    font-weight: bold;
+    color: #000;
+}
+
+#section5 .cancelbtn:hover {
+    background-color: #e16060;
+    color: #fff;
+}
+
+/* Add Zoom Animation */
+#section5 .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+
+   
+}
